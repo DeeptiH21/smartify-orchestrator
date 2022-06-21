@@ -1,0 +1,77 @@
+[
+  {
+    "itemDesc": "Coffee",
+    "itemNumber": 80496906,
+    "deptNumber": 4,
+    "deptDesc": "COFFEE",
+    "price": 5,
+    "location": {
+      "aisle": "A1",
+      "section": "2",
+      "shelfRow": 6,
+      "xaxisLoc": 17,
+      "yaxisLoc": 13
+    },
+    "itemImageURL": ""
+  },
+  {
+    "itemDesc": "Ritz Crackers",
+    "itemNumber": 80496907,
+    "deptNumber": 4,
+    "deptDesc": "SNACKS",
+    "price": 2.3,
+    "location": {
+      "aisle": "A1",
+      "section": "A1E",
+      "shelfRow": 6,
+      "xaxisLoc": 17,
+      "yaxisLoc": 24
+    },
+    "itemImageURL": ""
+  },
+  {
+    "itemDesc": "K Compact Classic Coffee Machine",
+    "itemNumber": 80496908,
+    "deptNumber": 4,
+    "deptDesc": "ELECTRONICS",
+    "price": 23,
+    "location": {
+      "aisle": "B1",
+      "section": "6",
+      "shelfRow": 3,
+      "xaxisLoc": 26,
+      "yaxisLoc": 27
+    },
+    "itemImageURL": ""
+  },
+  {
+    "itemDesc": "Brush Organiser",
+    "itemNumber": 80496909,
+    "deptNumber": 4,
+    "deptDesc": "COSMETICS",
+    "price": 12,
+    "location": {
+      "aisle": "A2",
+      "section": "1",
+      "shelfRow": 4,
+      "xaxisLoc": 21,
+      "yaxisLoc": 8
+    },
+    "itemImageURL": ""
+  },
+  {
+    "itemDesc": "Paper Towels",
+    "itemNumber": 80496910,
+    "deptNumber": 4,
+    "deptDesc": "HOME",
+    "price": 18,
+    "location": {
+      "aisle": "",
+      "section": "",
+      "shelfRow": 0,
+      "xaxisLoc": 0,
+      "yaxisLoc": 0
+    },
+    "itemImageURL": ""
+  }
+]
