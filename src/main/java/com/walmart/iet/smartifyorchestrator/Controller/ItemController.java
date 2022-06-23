@@ -51,9 +51,19 @@ public class ItemController {
   public void getImage(@PathVariable("itemNumber") int itemNumber,
                        HttpServletResponse response) throws IOException {
     String imageNumber=String.valueOf(itemNumber);
-    var imgFile = new ClassPathResource("images/"+imageNumber+".jpg");
+    var imgFile = new ClassPathResource("images/"+imageNumber+".png");
     response.setContentType(MediaType.IMAGE_JPEG_VALUE);
     StreamUtils.copy(imgFile.getInputStream(), response.getOutputStream());
   }
+  @PutMapping("/update")
+  public String updateItem(Item item){
+    return itemservice.updateItem(item);
+  }
 
+  @DeleteMapping("/delete/{itemNumber}")
+  public String deleteCountry(@PathVariable int itemNumber){
+    return itemservice.deleteItem(itemNumber);
+  }
 }
+
+

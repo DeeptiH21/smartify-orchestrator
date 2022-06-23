@@ -28,4 +28,6 @@ public class Item {
   @Embedded
   private Location location;
   private String itemImageURL;
+  private int onHand ;
+
 }

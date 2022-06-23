@@ -1,6 +1,6 @@
 [
   {
-    "itemDesc": "Coffee",
+    "itemDesc": "Bizzy cold brew",
     "itemNumber": 80496906,
     "deptNumber": 4,
     "deptDesc": "COFFEE",
@@ -12,10 +12,11 @@
       "xaxisLoc": 17,
       "yaxisLoc": 13
     },
-    "itemImageURL": ""
+    "itemImageURL": "",
+    "onHand": 5
   },
   {
-    "itemDesc": "Ritz Crackers",
+    "itemDesc": "Ritz crackers",
     "itemNumber": 80496907,
     "deptNumber": 4,
     "deptDesc": "SNACKS",
@@ -27,10 +28,11 @@
       "xaxisLoc": 17,
       "yaxisLoc": 24
     },
-    "itemImageURL": ""
+    "itemImageURL": "",
+    "onHand": 50
   },
   {
-    "itemDesc": "K Compact Classic Coffee Machine",
+    "itemDesc": "K compact classic",
     "itemNumber": 80496908,
     "deptNumber": 4,
     "deptDesc": "ELECTRONICS",
@@ -42,10 +44,11 @@
       "xaxisLoc": 26,
       "yaxisLoc": 27
     },
-    "itemImageURL": ""
+    "itemImageURL": "",
+    "onHand": 8
   },
   {
-    "itemDesc": "Brush Organiser",
+    "itemDesc": "Equate brush organizer",
     "itemNumber": 80496909,
     "deptNumber": 4,
     "deptDesc": "COSMETICS",
@@ -57,10 +60,11 @@
       "xaxisLoc": 21,
       "yaxisLoc": 8
     },
-    "itemImageURL": ""
+    "itemImageURL": "",
+    "onHand": 4
   },
   {
-    "itemDesc": "Paper Towels",
+    "itemDesc": "Bounty paper towels",
     "itemNumber": 80496910,
     "deptNumber": 4,
     "deptDesc": "HOME",
@@ -72,6 +76,7 @@
       "xaxisLoc": 0,
       "yaxisLoc": 0
     },
-    "itemImageURL": ""
+    "itemImageURL": "",
+    "onHand": 0
   }
 ]
