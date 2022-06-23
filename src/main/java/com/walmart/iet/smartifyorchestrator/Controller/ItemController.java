@@ -45,10 +45,13 @@ public class ItemController {
       itemList = Arrays.asList(items.split(",", -1));
   return itemservice.findItemByDesc(itemList);
   }
-  @RequestMapping(value = "/pinImage", method = RequestMethod.GET, produces = MediaType.IMAGE_JPEG_VALUE)
-  public void getImage(HttpServletResponse response) throws IOException {
-
-    var imgFile = new ClassPathResource("images/Ritz.jpg");
+  @RequestMapping(value = "/pin/image/{itemNumber}",
+      method = RequestMethod.GET,
+      produces = MediaType.IMAGE_JPEG_VALUE)
+  public void getImage(@PathVariable("itemNumber") int itemNumber,
+                       HttpServletResponse response) throws IOException {
+    String imageNumber=String.valueOf(itemNumber);
+    var imgFile = new ClassPathResource("images/"+imageNumber+".jpg");
     response.setContentType(MediaType.IMAGE_JPEG_VALUE);
     StreamUtils.copy(imgFile.getInputStream(), response.getOutputStream());
   }
