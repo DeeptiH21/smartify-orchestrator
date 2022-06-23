@@ -63,4 +63,9 @@ public class ItemService {
     itemRepository.deleteByItemNumber(itemNumber);
     return "Record Deleted " ;
   }
+
+  public Item createItem(Item item){
+    return itemRepository.save(item);
+  }
+
 }

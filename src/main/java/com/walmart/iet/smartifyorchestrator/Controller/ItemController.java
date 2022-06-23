@@ -33,36 +33,43 @@ public class ItemController {
   private ItemService itemservice;
 
   @GetMapping("/items")
-  public List<Item> getAllItems(){
+  public List<Item> getAllItems() {
     return itemservice.getItems();
   }
 
   @GetMapping("/itemList")
-  public List<Item> getItemList(@RequestParam("items") String items){
-    List<String> itemList=null;
+  public List<Item> getItemList(@RequestParam("items") String items) {
+    List<String> itemList = null;
     //System.out.println("items :: "+items);
-    if(items!=null && items.length()>0)
+    if (items != null && items.length() > 0)
       itemList = Arrays.asList(items.split(",", -1));
-  return itemservice.findItemByDesc(itemList);
+    return itemservice.findItemByDesc(itemList);
   }
+
   @RequestMapping(value = "/pin/image/{itemNumber}",
       method = RequestMethod.GET,
       produces = MediaType.IMAGE_JPEG_VALUE)
   public void getImage(@PathVariable("itemNumber") int itemNumber,
                        HttpServletResponse response) throws IOException {
-    String imageNumber=String.valueOf(itemNumber);
-    var imgFile = new ClassPathResource("images/"+imageNumber+".png");
+    String imageNumber = String.valueOf(itemNumber);
+    var imgFile = new ClassPathResource("images/" + imageNumber + ".png");
     response.setContentType(MediaType.IMAGE_JPEG_VALUE);
     StreamUtils.copy(imgFile.getInputStream(), response.getOutputStream());
   }
+
   @PutMapping("/update")
-  public String updateItem(Item item){
+  public String updateItem(Item item) {
     return itemservice.updateItem(item);
   }
 
   @DeleteMapping("/delete/{itemNumber}")
-  public String deleteCountry(@PathVariable int itemNumber){
+  public String deleteCountry(@PathVariable int itemNumber) {
     return itemservice.deleteItem(itemNumber);
+  }
+
+  @PostMapping("/addItem")
+  public Item addItem(@RequestBody Item item) {
+    return itemservice.createItem(item);
   }
 }
 
