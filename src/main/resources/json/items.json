@@ -9,8 +9,8 @@
       "aisle": "A1",
       "section": "2",
       "shelfRow": 6,
-      "xaxisLoc": 17,
-      "yaxisLoc": 13
+      "xaxisLoc": 28.828125,
+      "yaxisLoc": -19.326006
     },
     "itemImageURL": "",
     "onHand": 5
@@ -25,8 +25,8 @@
       "aisle": "A1",
       "section": "A1E",
       "shelfRow": 6,
-      "xaxisLoc": 17,
-      "yaxisLoc": 24
+      "xaxisLoc": 32.871094,
+      "yaxisLoc": 68.974012
     },
     "itemImageURL": "",
     "onHand": 50
@@ -41,8 +41,8 @@
       "aisle": "B1",
       "section": "6",
       "shelfRow": 3,
-      "xaxisLoc": 26,
-      "yaxisLoc": 27
+      "xaxisLoc": 126.5625,
+      "yaxisLoc": 78.650833
     },
     "itemImageURL": "",
     "onHand": 8
@@ -57,8 +57,8 @@
       "aisle": "A2",
       "section": "1",
       "shelfRow": 4,
-      "xaxisLoc": 21,
-      "yaxisLoc": 8
+      "xaxisLoc": 63.984375,
+      "yaxisLoc": -62.992983
     },
     "itemImageURL": "",
     "onHand": 4
@@ -73,8 +73,8 @@
       "aisle": "",
       "section": "",
       "shelfRow": 0,
-      "xaxisLoc": 0,
-      "yaxisLoc": 0
+      "xaxisLoc":  65.390625,
+      "yaxisLoc": 48.952057
     },
     "itemImageURL": "",
     "onHand": 0
