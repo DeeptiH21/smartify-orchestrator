@@ -20,8 +20,8 @@ public class Location {
   private String  aisle;
   private String section ;
   private int  shelfRow ;
-  private int  xaxisLoc ;
-  private int yaxisLoc ;
+  private float  xaxisLoc ;
+  private float yaxisLoc ;
 
 
 }
