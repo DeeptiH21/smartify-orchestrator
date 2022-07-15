@@ -1,17 +1,13 @@
 package com.walmart.iet.smartifyorchestrator.Controller;
 
-import com.walmart.iet.smartifyorchestrator.entity.Country;
 import com.walmart.iet.smartifyorchestrator.entity.Item;
-import com.walmart.iet.smartifyorchestrator.service.CountryService;
 import com.walmart.iet.smartifyorchestrator.service.ItemService;
+import com.walmart.iet.smartifyorchestrator.service.OCRService;
 import java.io.IOException;
-import java.util.ArrayList;
+import java.net.URISyntaxException;
 import java.util.Arrays;
 import java.util.List;
-import java.util.ListIterator;
-import java.util.Optional;
 import javax.servlet.http.HttpServletResponse;
-import javax.websocket.server.PathParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.MediaType;
@@ -31,6 +27,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ItemController {
   @Autowired
   private ItemService itemservice;
+  @Autowired
+  private OCRService ocrService;
 
   @GetMapping("/items")
   public List<Item> getAllItems() {
@@ -70,6 +68,16 @@ public class ItemController {
   @PostMapping("/addItem")
   public Item addItem(@RequestBody Item item) {
     return itemservice.createItem(item);
+  }
+
+  @PostMapping(value = "/ocrImage")
+  public  List<Item> ocrImage(@RequestParam("file") String fileName)
+      throws URISyntaxException, InterruptedException, IOException {
+    System.out.println("fileName :: "+fileName);
+    // passing the filepath to the service method
+    String response = ocrService.postOcrImage(fileName);
+    List<String> itemList=ocrService.formatResponsetoCSV(response);
+    return itemservice.findItemByDesc(itemList);
   }
 }
 

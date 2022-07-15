@@ -1,7 +1,6 @@
 package com.walmart.iet.smartifyorchestrator.service;
 
 import com.walmart.iet.smartifyorchestrator.dao.ItemRepository;
-import com.walmart.iet.smartifyorchestrator.entity.Country;
 import com.walmart.iet.smartifyorchestrator.entity.Item;
 import java.util.ArrayList;
 import java.util.List;

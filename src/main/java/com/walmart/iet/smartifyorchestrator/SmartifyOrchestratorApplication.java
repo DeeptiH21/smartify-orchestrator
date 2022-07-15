@@ -3,6 +3,7 @@ package com.walmart.iet.smartifyorchestrator;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.walmart.iet.smartifyorchestrator.entity.Item;
+import com.walmart.iet.smartifyorchestrator.property.Storage;
 import com.walmart.iet.smartifyorchestrator.service.ItemService;
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,11 +11,13 @@ import java.util.List;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-//@RestController
+@EnableConfigurationProperties({Storage.class})
 public class SmartifyOrchestratorApplication {
+
 
   public static void main(String[] args) {
     SpringApplication.run(SmartifyOrchestratorApplication.class, args);
