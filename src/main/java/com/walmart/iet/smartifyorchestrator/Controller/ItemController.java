@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.MediaType;
 import org.springframework.util.StreamUtils;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,11 +31,13 @@ public class ItemController {
   @Autowired
   private OCRService ocrService;
 
+  @CrossOrigin
   @GetMapping("/items")
   public List<Item> getAllItems() {
     return itemservice.getItems();
   }
 
+  @CrossOrigin
   @GetMapping("/itemList")
   public List<Item> getItemList(@RequestParam("items") String items) {
     List<String> itemList = null;
@@ -44,6 +47,7 @@ public class ItemController {
     return itemservice.findItemByDesc(itemList);
   }
 
+  @CrossOrigin
   @RequestMapping(value = "/pin/image/{itemNumber}",
       method = RequestMethod.GET,
       produces = MediaType.IMAGE_JPEG_VALUE)
@@ -55,21 +59,25 @@ public class ItemController {
     StreamUtils.copy(imgFile.getInputStream(), response.getOutputStream());
   }
 
+  @CrossOrigin
   @PutMapping("/update")
   public String updateItem(Item item) {
     return itemservice.updateItem(item);
   }
 
+  @CrossOrigin
   @DeleteMapping("/delete/{itemNumber}")
   public String deleteCountry(@PathVariable int itemNumber) {
     return itemservice.deleteItem(itemNumber);
   }
 
+  @CrossOrigin
   @PostMapping("/addItem")
   public Item addItem(@RequestBody Item item) {
     return itemservice.createItem(item);
   }
 
+  @CrossOrigin
   @PostMapping(value = "/ocrImage")
   public  List<Item> ocrImage(@RequestParam("file") String fileName)
       throws URISyntaxException, InterruptedException, IOException {
