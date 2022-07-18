@@ -1,10 +1,10 @@
 [
   {
-    "itemDesc": "Bizzy cold brew",
+    "itemDesc": "Bizzy Organic Cold Brew Coffee",
     "itemNumber": 80496906,
     "deptNumber": 4,
     "deptDesc": "COFFEE",
-    "price": 5,
+    "price": 28.22,
     "location": {
       "aisle": "A1",
       "section": "2",
@@ -16,11 +16,11 @@
     "onHand": 5
   },
   {
-    "itemDesc": "Ritz crackers",
+    "itemDesc": "Ritz Original Crackers",
     "itemNumber": 80496907,
     "deptNumber": 4,
     "deptDesc": "SNACKS",
-    "price": 2.3,
+    "price": 2.68,
     "location": {
       "aisle": "A1",
       "section": "A1E",
@@ -32,11 +32,11 @@
     "onHand": 50
   },
   {
-    "itemDesc": "K compact classic",
+    "itemDesc": "Keurig K-Compact Single Serve Coffee Maker",
     "itemNumber": 80496908,
     "deptNumber": 4,
     "deptDesc": "ELECTRONICS",
-    "price": 23,
+    "price": 134.38,
     "location": {
       "aisle": "B1",
       "section": "6",
@@ -48,11 +48,11 @@
     "onHand": 8
   },
   {
-    "itemDesc": "Equate brush organizer",
+    "itemDesc": "Equate Beauty 5 Section Tray",
     "itemNumber": 80496909,
     "deptNumber": 4,
     "deptDesc": "COSMETICS",
-    "price": 12,
+    "price": 12.98,
     "location": {
       "aisle": "A2",
       "section": "1",
@@ -64,11 +64,11 @@
     "onHand": 4
   },
   {
-    "itemDesc": "Bounty paper towels",
+    "itemDesc": "Bounty Select-A Size Paper Towels, 6 triple rolls",
     "itemNumber": 80496910,
     "deptNumber": 4,
     "deptDesc": "HOME",
-    "price": 18,
+    "price": 15.74,
     "location": {
       "aisle": "",
       "section": "",
